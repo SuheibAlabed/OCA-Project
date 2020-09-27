@@ -1,0 +1,40 @@
+body
+{
+    background-color:black;
+    color:black;
+}
+#headerD
+{
+    background-color: wheat;   
+}
+#Theader
+{
+    padding-bottom: 20px;
+
+}
+.profilePicture
+{
+    margin-top: 0;
+    width: 140px;
+    height: 130px;
+    overflow: hidden;
+    padding-left: 23px;
+}
+#bodyContent{
+    background-color: tomato;
+    
+}
+
+.info
+{
+    text-align: left;
+}
+input
+{
+    text-align: center;
+}
+.Date
+{
+    text-align: center;
+    margin-left: 400px;
+}
