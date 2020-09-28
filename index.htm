@@ -2,19 +2,37 @@
 <!--  -->
 <html lang="en">
 
-<!--  https://github.com/suheib98/OCA-Project/blob/master/index.htm -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <!--  https://github.com/suheib98/OCA-Project/blob/master/index.htm -->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            body {
+                background-color: black;
+                color: white;
 
 
-<body style="background-color: black; color:white">
-    <!--  Now we will talking about inline & block  -->
-    <h1 style="text-align: center;" >Google</h1>  <hr width="15%" ><br>
+            }
 
 
+            table,
+            th,
+            td {
+                border: 1px solid white;
+                color: #fff;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <h1>Google</h1>
+        <hr width="15%"><br>
+
+        <!-- 
     <form method="GET" action="index.htm">
         <h3>A Google approach to email</h3>
         <p></p><br>
@@ -65,45 +83,79 @@
        <a href="#idd123" id="idd12" style="color: white;">Top</a>
        
     </form>
+-->
 
-    <br><br>
-    
-    <tabel>
-        
-        <td>
-            <tr>
-                <img src="spam.png" width="50px" height="50px">
-            </tr>
-            <tr>
-                Keep unwanted messages out of your inboc with Google.
-            </tr>
-            <tr>
-                <img src="mobile.png" width="50px" height="50px">
-            </tr>
-            <tr>
-                Keep unwanted messages out of your inboc with Google.
-            </tr>
-        </td>
+        <br><br>
 
-        <td>
-            <tr>
-                <img src="mobile.png" width="50px" height="50px">
-            </tr>    
-            <tr>
-                Keep unwanted messages out of your inboc with Google.
-            </tr>
+        <table border="1">
 
-            <tr>
-                <img src="spam.png" width="50px" height="50px">
-            </tr>
-            <tr>
-                Keep unwanted messages out of your inboc with Google.
-            </tr>
-            
-        </td>
-    </tabel>
+            <thead>
 
-   
-    
-</body>
+
+
+                <tr>
+                    <th>ID</th>
+
+                    <th>
+                        FIrst Name
+                    </th>
+
+                    <th>
+                        Last Name
+                    </th>
+                    <th>
+                        Last Name
+                    </th>
+                    <th>
+                        email
+                    </th>
+                    <th>
+                        mob#
+                    </th>
+                    <th>
+                        mob2#
+                    </th>
+                </tr>
+
+
+            </thead>
+
+
+            <tbody>
+
+
+
+                <tr>
+                    <td> 1 </td>
+                    <td> Anas </td>
+                    <td rowspan="3"> Jawabreh</td>
+                    <td> Ahmad</td>
+                    <td>sufhsihi@sdfuhuh.com</td>
+                    <td>234234234</td>
+                    <td>234234234</td>
+                </tr>
+                <tr>
+                    <td> 1 </td>
+                    <td> Anas </td>
+                    <td> Jawabreh</td>
+                    <td> sfjslfkj@dfskdfj</td>
+                    <td>23423424</td>
+                    <td>234234234</td>
+                </tr>
+                <tr>
+                    <td> 1 </td>
+                    <td> Anas </td>
+                    <td>Jawabreh </td>
+                    <td> sfjslfkj@dfskdfj</td>
+                    <td colspan="2">suheif</td>
+
+
+
+            </tbody>
+
+
+
+            </tabel>
+    </body>
+
 </html>

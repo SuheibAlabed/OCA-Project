@@ -1,133 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        
-        <div id="headerD">
-            <table border="0">
-             <td>                   
-                        <div class="profilePicture">
-                            <img src="https://dl.dropbox.com/s/xwwk8twlq8x4tyq/Profile%20Picture%20-%20Copy.jpg?dl=0" alt="No_Pic" width="115px" height="150px"/>
-                        </div>                     
-            </td>           
-          
-            <td> 
-                <p style="color:black;" class="info"> <b>Name:</b>Suheib Alabed </p>
 
-                <p style="color:black;" class="info"> <b>Email:</b>suhib.alabed@gmail.com </p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-                <p style="color:black;" class="info"> <b>contact:</b>+962778870791 </p>
+    <body>
+        <header>
 
-                
-                <p style="color:black;"  class="info">
-                    <b> LinkedIn: </b>
-                    <a href="https://www.linkedin.com/in/suheib-alabed/">
-                        here
-                    </a>
-                </p>                        
-            </td>
-             <td>
-                 
-                 <div class="Date">    
-                                         
-                    Date:27/9/2020
-                    Day:Sunda
-                    
-                 </div>   
-                         
-             </td>           
-
-        </table>
-        </div>
-    </header>
-
-   <div id="bodyContent">
-       <form>
-           <fieldset>
-                <legend>Information</legend>
-
+            <div id="headerD">
                 <table border="0">
-                   <tr> 
-                        <td> 
-                                        
+                    <td>
+                        <div class="profilePicture">
+                            <img src="https://dl.dropbox.com/s/xwwk8twlq8x4tyq/Profile%20Picture%20-%20Copy.jpg?dl=0"
+                                alt="No_Pic" width="115px" height="150px" />
+                        </div>
+                    </td>
+
+                    <td>
+                        <p style="color:black;" class="info"> <b>Name:</b>Suheib Alabed </p>
+
+                        <p style="color:black;" class="info"> <b>Email:</b>suhib.alabed@gmail.com </p>
+
+                        <p style="color:black;" class="info"> <b>contact:</b>+962778870791 </p>
+
+
+                        <p style="color:black;" class="info">
+                            <b> LinkedIn: </b>
+                            <a href="https://www.linkedin.com/in/suheib-alabed/">
+                                here
+                            </a>
+                        </p>
+                    </td>
+                    <td>
+
+                        <div class="Date">
+
+                            Date:28/9/2020
+                            Day:Monday
+
+                        </div>
+
+                    </td>
+
+                </table>
+            </div>
+        </header>
+
+        <div id="bodyContent">
+            <form method="POST" action="index.htm">
+                <fieldset>
+                    <legend>Information</legend>
+
+                    <table border="0">
+                        <tr>
+                            <td>
+
                             <th>
                                 First Name
                             </th>
                             <th>
                                 <input type="text" placeholder="First Name...">
-                            </th>                        
-                    
-                        
+                            </th>
+
+
                             <th>
                                 Middle Name
                             </th>
                             <th>
                                 <input type="text" placeholder="First Name...">
                             </th>
-                        
-                        
+
+
                             <th>
                                 Last Name
                             </th>
                             <th>
                                 <input type="text" placeholder="Last Name...">
                             </th>
-                        </td>
-                  </tr>  
-                  <tr>
-                      <td>
-                          <th>
-                            Email
-                          </th>
-                          <th>
-                            <input type="email" placeholder="Email..">
-                          </th>
-                      </td>
-                  </tr>
-                  <tr>
-                    <td>
-                        <th>
-                            Conf. Email
-                        </th>
-                        <th>
-                            <input type="email" placeholder="Conf. Email..">
-                        </th>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <th>
-                            password
-                        </th>
-                        <th>
-                            <input type="password" placeholder="Pass.."/>
-                        </th>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <th>
-                            Phone
-                        </th>
-                        <th>
-                            <input type="tel" placeholder="Phone..">
-                        </th>
-                    </td>
-                </tr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <th>
+                                Email
+                            </th>
+                            <th>
+                                <input type="email" placeholder="Email..">
+                            </th>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <th>
+                                Conf. Email
+                            </th>
+                            <th>
+                                <input type="email" placeholder="Conf. Email..">
+                            </th>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <th>
+                                password
+                            </th>
+                            <th>
+                                <input type="password" placeholder="Pass.." />
+                            </th>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <th>
+                                Phone
+                            </th>
+                            <th>
+                                <input type="tel" placeholder="Phone..">
+                            </th>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <th>
+                                Note
+                            </th>
+                            <th>
 
-                </table>          
+                                <textarea placeholder="Add Note">
 
-               <br><input type="submit" >
-               <input type="reset" >  
-           </fieldset>
-       </form>
-   </div>
-    
-</body>
+                                </textarea>
+
+                            </th>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                            <th>
+                                Date
+                            </th>
+                            <th>
+
+                                <input type="date" />
+
+                            </th>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                            <th>
+                                Gender
+                            </th>
+                            <th>
+
+                                <label><input type="radio" value="Male1" id=12 /> Male</label>
+
+                            </th>
+                            <th>
+
+                                <label><input type="radio" value="female1" id=21 /> Female</label>
+
+                            </th>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                            <th>
+                                Programming Language
+                            </th>
+                            <th>
+
+                                <label><input type="checkbox" value="suheib" /> c++ </label>
+
+                            </th>
+                            <th>
+
+                                <label><input type="checkbox" value="suheib" /> java</label>
+
+                            </th>
+                            <th>
+
+                                <label><input type="checkbox" value="suheib" /> c#</label>
+
+                            </th>
+                            <th>
+
+                                <label><input type="checkbox" value="suheib" /> Other</label>
+
+                            </th>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <th>
+                                Hobbies
+                            </th>
+                            <th>
+
+                                <select>
+                                    <option>Basktball</option>
+                                    <option>football</option>
+                                    <option>Other..</option>
+                                </select>
+
+                            </th>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                            <th>
+                                Change the Color
+                            </th>
+                            <th>
+                                <input type="color" />
+                            </th>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                            <th>
+                                Upload your file
+                            </th>
+                            <th>
+                                <input type="file" />
+                            </th>
+
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                            <th>
+                                Rate the website
+                            </th>
+                            <th>
+                                <input type="range" />
+                            </th>
+
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <br><input type="submit">
+                    <input type="reset">
+                </fieldset>
+            </form>
+        </div>
+
+    </body>
+
 </html>

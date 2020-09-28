@@ -1,40 +1,33 @@
-body
-{
-    background-color:black;
-    color:black;
+body {
+    background-color: black;
+    color: wheat;
 }
-#headerD
-{
-    background-color: wheat;   
-}
-#Theader
-{
-    padding-bottom: 20px;
 
+#headerD {
+    background-color: wheat;
 }
-.profilePicture
-{
-    margin-top: 0;
+
+.profilePicture {
+
     width: 140px;
     height: 130px;
     overflow: hidden;
     padding-left: 23px;
 }
-#bodyContent{
-    background-color: tomato;
-    
+
+#bodyContent {
+    background-color: brown
 }
 
-.info
-{
+.info {
     text-align: left;
 }
-input
-{
+
+input {
     text-align: center;
 }
-.Date
-{
+
+.Date {
     text-align: center;
-    margin-left: 400px;
+    margin-left: 1300px;
 }
