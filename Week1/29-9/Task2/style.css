@@ -1,0 +1,26 @@
+header {
+  text-align: center;
+}
+
+fieldset {
+  border-radius: 20px;
+}
+
+section {
+  float: left;
+  padding: 0 10px;
+}
+
+div {
+  width: 25%;
+}
+
+#Box {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2 {
+  color: saddlebrown
+}
