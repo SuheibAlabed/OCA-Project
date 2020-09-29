@@ -24,5 +24,37 @@ form {
 }
 
 input {
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+body {
+  background-color: beige;
+}
+
+header {
+  background-color: burlywood;
+  margin-top: -20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+header nav ul li {
+  list-style-type: none;
+  display: inline;
+  margin: 30px;
+}
+
+
+
+header nav ul li a {
+  text-decoration-line: none;
+  color: black;
+  margin: 30px
+}
+
+header nav ul li:hover {
+  text-decoration-line: none;
+  background-color: wheat;
+  font-size: 20px;
 }
