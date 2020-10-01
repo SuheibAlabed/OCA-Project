@@ -1,40 +1,37 @@
 html body {
-  margin: 0;
+  margin: 2;
   height: 100%
 }
 
 
-.green-Box1 {
-  max-height: 100%;
-  max-width: 100%;
+
+
+.yellow-Box1 {
+  width: 95%;
   padding: 2%;
   background-color: green;
 }
 
-.yellow-Box2 {
+.green-Box2 {
   width: 95%;
-  height: 95%;
   padding: 2%;
   background-color: yellow;
 }
 
-.green-Box3 {
+.yellow-Box3 {
   width: 95%;
-  height: 95%;
   padding: 2%;
   background-color: green;
 }
 
-.yellow-Box4 {
+.green-Box4 {
   width: 95%;
-  height: 95%;
   padding: 2%;
   background-color: yellow;
 }
 
 .green-Box5 {
   width: 95%;
-  height: 95%;
   padding: 2%;
   background-color: green;
 }
