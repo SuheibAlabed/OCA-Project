@@ -1,0 +1,53 @@
+* {
+  margin: 0px
+}
+
+
+html body {
+  background-color: silver;
+  margin: 0;
+  height: 100%;
+}
+
+section {
+  background-color: white;
+  width: 70%;
+  height: 900px;
+  float: left;
+  overflow: hidden;
+}
+
+header {
+
+  padding-bottom: 50px;
+  background-color: wheat;
+  font-size: 2em;
+}
+
+#arti-2 {
+  background: rosybrown;
+  width: 30%;
+}
+
+#arti-1 p {
+  padding: 40px 15px;
+}
+
+#Box {
+  content: "";
+  display: table;
+  clear: both;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+footer {
+  background-color: gray;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  color: white;
+  width: 100%;
+}

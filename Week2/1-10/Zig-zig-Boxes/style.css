@@ -1,0 +1,23 @@
+* {
+  padding: 0px;
+}
+
+.yellow-Box {
+  height: 50px;
+  width: 50px;
+  background-color: yellow;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.green-Box {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+ul .yellow-Box {
+  margin-bottom: 30px;
+}

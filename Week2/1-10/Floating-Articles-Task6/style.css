@@ -1,0 +1,53 @@
+* {
+  margin: 5px;
+}
+
+header h2 {
+  margin-bottom: 23px;
+}
+
+.arti-1 {
+  background-color: gainsboro;
+  width: 25%;
+
+}
+
+.arti-2 {
+  background-color: gainsboro;
+  width: 25%;
+
+}
+
+.arti-3 {
+  background-color: gainsboro;
+  width: 25%;
+
+
+}
+
+section {
+  float: left;
+  margin-left: 10px;
+  width: 25%;
+  height: 115px;
+  overflow: hidden;
+}
+
+article {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  background-color: plum;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  overflow: auto;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  font-weight: bold;
+}
