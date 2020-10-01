@@ -5,6 +5,12 @@
 table tr td {
   border: 2px solid black;
   border-radius: 7px;
-  padding: 5px;
+  padding: 7px;
   box-shadow: 2px 2px 2px gray;
+  margin: 10px;
+
+}
+
+table {
+  border-spacing: 10px;
 }
