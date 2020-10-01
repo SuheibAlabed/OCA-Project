@@ -53,7 +53,8 @@ header nav ul li {
 header nav ul li a {
   text-decoration-line: none;
   color: black;
-  margin: 30px
+  margin: 30px;
+  text-align: center;
 }
 
 header nav ul li:hover {

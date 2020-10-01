@@ -1,0 +1,10 @@
+* {
+  margin: 10px
+}
+
+table tr td {
+  border: 2px solid black;
+  border-radius: 7px;
+  padding: 5px;
+  box-shadow: 2px 2px 2px gray;
+}
