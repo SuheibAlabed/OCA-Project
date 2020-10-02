@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  overflow: hidden;
+}
+
+#TV-Static {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+#Box img {
+  width: 30%;
+
+}
+
+#Box {
+  padding: 150px;
+  padding-left: 300px;
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+#about {
+  color: rosybrown;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  float: left;
+  margin-top: 40px;
+
+}
+
+.sec-2 ul li {
+  margin-top: 90px;
+  width: 600px;
+}
+
+.sec-1 {
+  float: left;
+}
+
+
+
+#frame-Work-1:hover {
+  background: url("https://dl.dropbox.com/s/3vnrha0nt9dva0w/Work-fill-1.png?dl=0");
+
+  src: url("https://dl.dropbox.com/s/ln70l2zbjyvxmsd/soundButton.wav?dl=0");
+
+}
+
+#frame-Contact-1:hover {
+  background: url("https://dl.dropbox.com/s/3laosry3ljwe11m/Contact-fill-1.png?dl=0");
+}
