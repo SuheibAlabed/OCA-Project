@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  overflow: hidden;
+
 }
 
 #TV-Static {
@@ -10,97 +10,36 @@
   z-index: -1;
 }
 
-#Box img {
+.container-1 {
+  display: flex;
+  transform: translateX(25%) translateY(80%);
+
+}
+
+.item-1 {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+
+}
+
+.item-1 a img:hover {
+  width: 12rem;
+}
+
+.item-0 {
+
   width: 30%;
-
+  margin-right: 20vh;
 }
 
-#Box {
-  margin-top: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
-  content: "";
-  display: table;
-  clear: both;
-
-}
-
-#about {
-  color: rosybrown;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  float: left;
-  margin-top: 40px;
-
-}
-
-.sec-2 ul li {
-  margin-bottom: 80px;
-  border-spacing: 40px;
-
-}
-
-.sec-2 table tr td {
-  padding: 5%;
-  max-width: 80%;
-  max-height: 100%;
-
-}
-
-.sec-2 table tr td a img {
-
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-
-}
-
-.sec-1 {
-  width: 57%;
-  float: left;
-}
-
-
-#frame-Work-1:hover {
-  width: 40%;
-}
-
-#frame-Contact-1:hover {
-  width: 40%;
-}
-
-#contact-table {
-  border: 2px white solid;
-  color: white;
-  padding-right: 40%;
-  padding-bottom: 45%;
-}
-
-#contact-table img {
-  padding-top: 10%;
-  margin-left: 20%;
-  ;
-}
-
-#Box-cont-1 {
-  color: white;
-  content: "";
-  display: table;
-  clear: both;
-  margin-left: 25%;
-  margin-top: 10%;
-  margin-right: 10%;
-  padding-top: 70px;
-  padding-bottom: 70px;
+.Bio-1 {
+  color: brown;
   width: 50%;
-  border: 1px solid white;
-  border-radius: 20px;
+
+  margin-top: 9vh;
 }
 
 #info-cont {
-  padding-left: 20%;
-}
-
-#logo-cont {
-  float: left;
-  padding-left: 60px;
+  color: white;
+  margin-left: 20%;
 }
