@@ -20,7 +20,9 @@ body {
 .First-Part p {
   color: white;
   font-size: 5em;
-  transform: translateX(30vh)translateY(50vh);
+  text-align: center;
+  margin-top: 50%;
+
 }
 
 
@@ -33,7 +35,8 @@ body {
 .Second-Part p {
   color: white;
   font-size: 5em;
-  transform: translateX(30vh)translateY(50vh);
+  text-align: center;
+  margin-top: 50%;
 }
 
 .container-1 {
