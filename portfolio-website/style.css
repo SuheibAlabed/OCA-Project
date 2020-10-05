@@ -1,6 +1,5 @@
 * {
   margin: 0;
-
 }
 
 #TV-Static {
@@ -20,7 +19,9 @@
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
 
+
 }
+
 
 .item-1 a img:hover {
   width: 12rem;

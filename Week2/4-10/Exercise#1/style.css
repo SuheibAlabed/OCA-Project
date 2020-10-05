@@ -1,0 +1,33 @@
+* {
+  margin: 5px 7px;
+}
+
+.item-1 {
+  background-color: black;
+  height: 100px;
+  width: 100%x;
+}
+
+.item-3 {
+  background-color: blue;
+  height: 200px;
+  width: 100%x;
+}
+
+.Box-1 {
+  background-color: orange;
+  height: 350px;
+  width: auto;
+}
+
+.Box-2 {
+  display: grid;
+  background-color: green;
+  height: 350px;
+  width: auto;
+}
+
+.item-2 {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
