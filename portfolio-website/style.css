@@ -7,20 +7,66 @@
 body {
   background-color: #07031a;
   color: #ffcb74;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+
+
+header aside {
+  color: white;
+  display: flex;
+  position: fixed;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 6em;
+  height: 8em;
+  font-family: 'Galindo', cursive;
+  background-color: #ffcb74;
+  transform: translateY(-5.7em);
+  animation: bar 1s;
+  width: 100%
+}
+
+header aside a {
+  text-decoration-line: none;
+}
+
+header aside a:hover {
+  text-decoration-line: none;
+  border-bottom: 3px solid white;
+}
+
+
+
+@keyframes bar {
+  from {
+    transform: translateY(-13em)
+  }
+
+  to {
+    transform: translateY(-5.7em)
+  }
+
 }
 
 #container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   box-sizing: border-box;
-  width: 55em;
-  padding: 20vh 50vh;
+  width: 61em;
+  margin: 25vh;
+  position: absolute;
+
 }
 
 .Bio {
   /* color: white; */
   width: 15em;
-  margin: 4em 3em;
+  margin: 4em;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.2em;
 
 }
 
@@ -31,8 +77,10 @@ body {
   box-sizing: border-box;
 }
 
-.logo img {
-  width: 20em;
+.logo {
+  color: white;
+  font-size: 3em;
+  font-family: 'Galindo', cursive;
 }
 
 .menu {
@@ -43,8 +91,12 @@ body {
   text-align: center;
 }
 
-.menu a img {
-  padding: 1em;
+.menu a {
+
+  font-family: 'Indie Flower', cursive;
+  text-decoration-line: none;
+  color: white;
+  font-size: 3em;
 }
 
 
@@ -73,27 +125,37 @@ body {
 
 #info-cont {
 
-  margin-left: 25em;
+  margin-left: 30em;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.1em;
 }
 
-#info-cont b,
-h3 {
-  color: #b1b493;
+#info-cont a {
 
+  color: white
+}
+
+#info-cont h3 {
+  color: #07031A;
+}
+
+#info-cont h3 {
+  background-color: #ffcb74;
 }
 
 
 .menu a:hover:nth-child(odd) {
-  background: #4f8a8b;
+  /* background: #4f8a8b; */
   border-left: 4px solid #ffcb74;
-  transform: translateX(-3em);
+  transform: translateX(-0.5em);
   opacity: 80%;
 }
 
 .menu a:hover:nth-child(even) {
-  background: #4f8a8b;
+  padding: 0.2em;
+  /* background: #4f8a8b; */
   border-right: 4px solid #ffcb74;
-  transform: translateX(3em);
+  transform: translateX(0.5em);
   opacity: 80%;
 }
 
