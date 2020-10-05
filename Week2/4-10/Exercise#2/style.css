@@ -1,0 +1,41 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+}
+
+
+
+.First-Part {
+  background-color: orange;
+  height: 100vh;
+  width: 50%;
+}
+
+.First-Part p {
+  color: white;
+  font-size: 5em;
+  transform: translateX(30vh)translateY(50vh);
+}
+
+
+.Second-Part {
+  background-color: blue;
+  width: 50%
+}
+
+
+.Second-Part p {
+  color: white;
+  font-size: 5em;
+  transform: translateX(30vh)translateY(50vh);
+}
+
+.container-1 {
+  display: flex;
+}
