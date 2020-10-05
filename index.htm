@@ -1,252 +1,57 @@
 <!DOCTYPE html>
-<!--  -->
 <html lang="en">
 
-    <!--  https://github.com/suheib98/OCA-Project/blob/master/index.htm -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+      #con {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100vh;
 
-        <style>
-            body {
-                background-color: black;
+      }
 
-            }
+      .item {
+        background-color: gray;
+        padding: 1rem 1.35rem;
+        margin: 0.75rem;
+        border: solid black 1;
+        flex: 1;
+      }
+    </style>
+  </head>
 
-
-            table,
-            th {
-
-                color: #fff;
-            }
-
-
-
-            h1 {
-                text-align: center;
-            }
-
-            header {
-                background-color: blanchedalmond;
-                padding-bottom: 20px;
-            }
-
-            #headert {
-                text-align: center;
-            }
-
-            #bodyC {
-                background-color: coral;
-            }
-
-
-            aside,
-            section {
-                text-align: center;
-                padding-left: 20px;
-            }
-
-            footer {
-                color: white;
-                background-color: wheat
-            }
-
-            #Footer2 {
-                color: black
-            }
-
-            label {
-                color: black
-            }
-        </style>
-    </head>
-
-
-    <body>
-
-
-
-
-        <!-- Table
-        <table border="1">
-
-            <thead>
-                <tr>
-                    <th>ID</th>
-
-                    <th>FIrst Name</th>
-                    <th> Last Name </th>
-                    <th>Last Name</th>
-                    <th>email</th>
-                    <th>
-                        mob#
-                    </th>
-                    <th>
-                        mob2#
-                    </th>
-                </tr>
-
-            </thead>
-
-            <tbody>
-
-                <tr>
-                    <td> 1 </td>
-                    <td> Anas </td>
-                    <td rowspan="3"> Jawabreh</td>
-                    <td> Ahmad</td>
-                    <td>sufhsihi@sdfuhuh.com</td>
-                    <td>234234234</td>
-                    <td>234234234</td>
-                </tr>
-                <tr>
-                    <td> 1 </td>
-                    <td> Anas </td>
-                    <td> Jawabreh</td>
-                    <td> sfjslfkj@dfskdfj</td>
-                    <td>23423424</td>
-                    <td>234234234</td>
-                </tr>
-                <tr>
-                    <td> 1 </td>
-                    <td> Anas </td>
-                    <td>Jawabreh </td>
-                    <td> sfjslfkj@dfskdfj</td>
-                    <td colspan="2">suheif</td>
-
-            </tbody>
-
-            </tabel>
-        -->
-
-        <header>
-            <h1>Article</h1>
-            <p id="headert">Lorem ipsum dolor sit.</p>
-
-        </header>
-
-        <div id="bodyC">
-
-            <article>
-
-
-                <section>
-
-                    <table>
-                        <tr>
-                            <th>Article 1</th>
-                            <th>Article 2</th>
-                            <th>Article 3</th>
-                            <th>Article 4</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <aside>
-
-                                    Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit. Amet nisi<br>
-                                    labore
-                                    fugiat
-                                    explicabo,<br>
-                                    accusantium ab nihil neque <br>impedit itaque libero quis rerum <br>numquam eius
-                                    dolores
-                                    id
-                                    tenetur<br>
-                                    officia asperiores odio!
-
-                                </aside>
-                            </td>
-
-                            <td>
-                                <section>
-
-                                    Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit. Amet nisi<br>
-                                    labore
-                                    fugiat
-                                    explicabo,<br>
-                                    accusantium ab nihil neque <br>impedit itaque libero quis rerum <br>numquam eius
-                                    dolores
-                                    id
-                                    tenetur<br>
-                                    officia asperiores odio!
-
-                                </section>
-                            </td>
-
-                            <td>
-                                <section>
-
-                                    Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit. Amet nisi<br>
-                                    labore
-                                    fugiat
-                                    explicabo,<br>
-                                    accusantium ab nihil neque <br>impedit itaque libero quis rerum <br>numquam eius
-                                    dolores
-                                    id
-                                    tenetur<br>
-                                    officia asperiores odio!
-
-                                </section>
-                            </td>
-                            <td>
-                                <aside>
-
-                                    Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit. Amet nisi<br>
-                                    labore
-                                    fugiat
-                                    explicabo,<br>
-                                    accusantium ab nihil neque <br>impedit itaque libero quis rerum <br>numquam eius
-                                    dolores
-                                    id
-                                    tenetur<br>
-                                    officia asperiores odio!
-
-                                </aside>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan=4><img
-                                    src="https://lh3.googleusercontent.com/proxy/v_W-q0u_cMzGHuGxz0nTjrc-dACN6rxLonJh6c-du72UsAhyojHanW4-fL1OhjEpdiVhBDN2UD0SCG6c-bUY5VA3pWOShkXghS7wejWcRgTzphXbNl0ZdwbXEesdmorjMZ0y1b_nBqLlCYdB" />
-                            </td>
-                        </tr>
-                    </table>
-
-
-
-                </section>
-
-
-            </article>
-
-        </div>
-        <footer>
-
-            <div style="padding-left: 300px;">
-                <table>
-
-                    <tr style="color: black; text-align: center;">
-                        <td>
-
-                            Lorem ipsum dolor sit <br>amet consectetur<br> adipisicing elit. Et, maiores?
-                        </td>
-                        <td>
-
-                            Lorem ipsum dolor sit <br>amet consectetur<br> adipisicing elit. Et, maiores?
-                        </td>
-                    </tr>
-
-
-                </table>
-
-
-            </div>
-            <form method="POST">
-
-                <label> Search <input type="search" id="search"> </label>
-                <input type="submit" value="Search">
-            </form>
-        </footer>
-    </body>
+  <body>
+    <div id="con">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
 
 </html>

@@ -1,5 +1,114 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #07031a;
+  color: #ffcb74;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-sizing: border-box;
+  width: 55em;
+  padding: 20vh 50vh;
+}
+
+.Bio {
+  /* color: white; */
+  width: 15em;
+  margin: 4em 3em;
+
+}
+
+.logo-Bio {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.logo img {
+  width: 20em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20em;
+  text-align: center;
+}
+
+.menu a img {
+  padding: 1em;
+}
+
+
+
+
+
+.backfooter {
+
+  position: fixed;
+  width: 100%;
+  padding: 1em;
+  bottom: 0;
+  background-color: gray;
+  z-index: -1;
+  opacity: 50%;
+}
+
+.textfooter {
+  color: white;
+  bottom: 0;
+  position: fixed;
+  margin-left: 40%;
+  padding: 1vh;
+
+}
+
+#info-cont {
+
+  margin-left: 25em;
+}
+
+#info-cont b,
+h3 {
+  color: #b1b493;
+
+}
+
+
+.menu a:hover:nth-child(odd) {
+  background: #4f8a8b;
+  border-left: 4px solid #ffcb74;
+  transform: translateX(-3em);
+  opacity: 80%;
+}
+
+.menu a:hover:nth-child(even) {
+  background: #4f8a8b;
+  border-right: 4px solid #ffcb74;
+  transform: translateX(3em);
+  opacity: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* * {
+  margin: 0;
 }
 
 html,
@@ -21,25 +130,23 @@ body {
   display: flex;
   width: 120vh;
   transform: translateX(50vh) translateY(30vh);
-
-
 }
 
-.item-1 {
+.menu-1 {
   display: grid;
   padding-left: 30vh;
   grid-template-rows: 1fr 2fr 1fr;
-
-
 }
 
 
-.item-1 a img:hover {
-  width: 12rem;
+.menu-1 a img:hover {
+  padding: 10px;
+  background: #222831;
+  border-left: 4px solid rosybrown;
+  border-right: 4px solid rosybrown;
 }
 
 .item-0 {
-
   width: 30%;
   margin-right: 20vh;
 }
@@ -50,7 +157,47 @@ body {
   margin-top: 9vh;
 }
 
+
 #info-cont {
   color: white;
   margin-left: 40vh;
 }
+
+.backfooter {
+
+  position: fixed;
+  width: 100%;
+  padding: 2vh;
+  bottom: 0;
+  background-color: gray;
+  z-index: -1;
+  opacity: 50%;
+}
+
+.textfooter {
+  color: white;
+  bottom: 0;
+  position: fixed;
+  margin-left: 40%;
+  padding: 1vh;
+
+}
+
+.menu-1 a img:visited {
+  border: 16px solid #ff33ff;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+} */
