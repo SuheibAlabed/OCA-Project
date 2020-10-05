@@ -2,6 +2,14 @@
   margin: 0;
 }
 
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 #TV-Static {
   position: fixed;
   min-width: 100%;
@@ -11,12 +19,15 @@
 
 .container-1 {
   display: flex;
-  transform: translateX(25%) translateY(80%);
+  width: 120vh;
+  transform: translateX(50vh) translateY(30vh);
+
 
 }
 
 .item-1 {
   display: grid;
+  padding-left: 30vh;
   grid-template-rows: 1fr 2fr 1fr;
 
 
@@ -35,12 +46,11 @@
 
 .Bio-1 {
   color: brown;
-  width: 50%;
-
+  width: 30vh;
   margin-top: 9vh;
 }
 
 #info-cont {
   color: white;
-  margin-left: 20%;
+  margin-left: 40vh;
 }
