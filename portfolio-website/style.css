@@ -118,7 +118,7 @@ header aside a:hover {
   color: white;
   bottom: 0;
   position: fixed;
-  margin-left: 40%;
+  margin-left: 45%;
   padding: 1vh;
 
 }
@@ -157,6 +157,24 @@ header aside a:hover {
   border-right: 4px solid #ffcb74;
   transform: translateX(0.5em);
   opacity: 80%;
+}
+
+
+#container-w {
+  display: flex;
+  transform: translateY(15em) translateX(10em);
+  overflow-x: scroll;
+  width: 175vh
+}
+
+#container-w::-webkit-scrollbar {
+  /* display: none; */
+}
+
+.img-w {
+  background-color: white;
+  padding: 9em;
+  margin: 1em;
 }
 
 
