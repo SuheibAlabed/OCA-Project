@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #edc988;
+}
+
+.item img {
+  width: 6em;
+}
+
+.item p {
+  margin: 2em 2em;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  margin: 10vh 75vh;
+  width: 30em;
+  border-radius: 3em;
+  padding: 1em;
+  box-shadow: black 2px 2px 10px;
+  background-color: white;
+}
+
+.item {
+  display: flex;
+}
+
+hr {
+  text-align: center;
+  margin: 3% 10%;
+}
