@@ -160,22 +160,119 @@ header aside a:hover {
 }
 
 
-#container-w {
+
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-button {
+  width: 2px;
+  height: 2px;
+}
+
+.horizontal-scroll-wrapper {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 20.5%;
+  max-height: 100%;
+  margin: 0;
+  background: #07031a;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-80px);
+  transform-origin: right top;
+  border-radius: 20px;
+}
+
+.horizontal-scroll-wrapper>div {
   display: flex;
-  transform: translateY(15em) translateX(10em);
-  overflow-x: scroll;
-  width: 175vh
+  padding: 0em;
+  background: white;
+  transform: rotate(90deg);
+  transform-origin: right top;
 }
 
-#container-w::-webkit-scrollbar {
-  /* display: none; */
+.squares {
+  padding: 4em 0 0 0;
+  margin: 11% 0 0 10%;
+
 }
 
-.img-w {
-  background-color: white;
-  padding: 9em;
-  margin: 1em;
+.squares>div {
+  width: 40vh;
+  height: 40vh;
+  opacity: 70%;
+  overflow: hidden;
+  animation: scorl 2s;
 }
+
+@keyframes scorl {
+  from {
+    width: 50vh;
+    height: 50vh;
+  }
+
+  to {
+    width: 40vh;
+    height: 40vh;
+  }
+}
+
+.squares>div:hover {
+  width: 41vh;
+  height: 41vh;
+  box-shadow: black 3px 4px 60px;
+  opacity: 100%;
+
+}
+
+
+
+
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+
+}
+
+.container:hover .overlay {
+  opacity: 60%;
+}
+
+.text {
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+
 
 
 
