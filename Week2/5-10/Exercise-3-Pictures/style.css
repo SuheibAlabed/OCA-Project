@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.imge img {
+  width: 40em;
+  height: 20em;
+  padding: 10px;
+}
+
+#containter {
+  display: grid;
+  padding: px;
+  grid-template-columns: repeat(3, 1fr)
+}
