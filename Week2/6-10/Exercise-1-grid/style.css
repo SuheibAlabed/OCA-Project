@@ -9,7 +9,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1em;
   margin: 0 25% 0 25%;
-  width: auto;
+
 }
 
 
@@ -17,6 +17,7 @@
 .item {
   background-color: aqua;
   height: 10em;
+
 }
 
 .item:first-child {
