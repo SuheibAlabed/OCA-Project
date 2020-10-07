@@ -269,6 +269,10 @@ header aside a:hover {
   text-align: center;
 }
 
+.img-w img {
+  transform: translateX(-10em);
+}
+
 
 
 
