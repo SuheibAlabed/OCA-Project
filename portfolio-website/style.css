@@ -7,11 +7,11 @@
 body {
   background-color: #07031a;
   color: #ffcb74;
-  font-family: 'Indie Flower', cursive;
-
+  font-family: "Indie Flower", cursive;
 }
-
-
+body #container {
+  justify-content: center;
+}
 
 header aside {
   color: white;
@@ -22,11 +22,11 @@ header aside {
   justify-content: space-around;
   padding-top: 6em;
   height: 8em;
-  font-family: 'Galindo', cursive;
+  font-family: "Galindo", cursive;
   background-color: #ffcb74;
   transform: translateY(-5.7em);
   animation: bar 1s;
-  width: 100%
+  width: 100%;
 }
 
 header aside a {
@@ -38,31 +38,237 @@ header aside a:hover {
   border-bottom: 3px solid white;
 }
 
-
-
 @keyframes bar {
   from {
-    transform: translateY(-13em)
+    transform: translateY(-13em);
   }
 
   to {
-    transform: translateY(-5.7em)
+    transform: translateY(-5.7em);
   }
-
 }
 
 #container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   box-sizing: border-box;
-  width: 61em;
-  margin: 25vh;
+  margin: 25vh 0 0 25vh;
   position: absolute;
-
+  /* border: 2px solid white; */
 }
 
+.logo {
+  color: white;
+  font-size: 3.5em;
+  font-family: "Galindo", cursive;
+  /* border:2px solid white */
+}
+.menu {
+  text-align: center;
+}
+.menu a p {
+  margin-left: 1em;
+  font-size: 4em;
+  text-align: center;
+  /* border: 2px solid white; */
+  color: white;
+  text-decoration: none;
+}
+.menu a {
+  text-decoration: none;
+}
+
+.menu a p:hover {
+  /* color: #07031a; */
+  /* border-left: 4px solid #ffcb74; */
+  /* padding: 0.5em; */
+  border-radius: 20px;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+  opacity: 80%;
+}
 .Bio {
-  /* color: white; */
+  color: ffcb74;
+  width: 15em;
+  margin: 4em;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.2em;
+}
+
+.textfooter {
+  color: white;
+  bottom: 0;
+  position: fixed;
+  background: black;
+  text-align: center;
+  width: 100%;
+}
+
+#info-cont {
+  font-family: "Indie Flower", cursive;
+  font-size: 1.3em;
+}
+
+#info-cont a {
+  color: white;
+}
+
+#info-cont h3 {
+  color: #07031a;
+}
+
+h3 {
+  background-color: #ffcb74;
+  color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "logo logo logo"
+    "content sidebar sidebar"
+    "Address Address Address";
+  grid-gap: 0.25rem;
+  font-size: 1.4em;
+}
+.content {
+  grid-area: content;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.Address {
+  grid-area: Address;
+}
+.logo-c {
+  margin-top: 10vh;
+  margin-bottom: 2em;
+  grid-area: logo;
+  justify-self: center;
+  font-size: 1.5em;
+  color: white;
+}
+
+.content,
+.sidebar,
+.Address {
+  border: #333 1.5px solid;
+}
+
+@media (max-width: 400px) {
+  .container {
+    grid-template-areas:
+      "logo "
+      "content content "
+      "Address Address ";
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-areas:
+      "logo "
+      "content"
+      "sidebar"
+      "Address";
+  }
+}
+
+.container-w {
+  display: grid;
+  /* grid-template-areas: "cardd-w"; */
+  grid-template-areas: "cardd-1 cardd-2 cardd-3 cardd-4 cardd-5";
+  grid-gap: 0.25rem;
+  font-size: 1.4em;
+  grid-gap: 6em;
+
+  margin-top: 1em;
+}
+
+.card-w {
+  grid-area: cardd-1;
+  text-align: center;
+}
+
+.card-w div,
+.card-w2 div,
+.card-w3 div,
+.card-w4 div,
+.card-w5 div {
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 5em 1em 5em 1em;
+  z-index: -1;
+}
+.card-w div:hover,
+.card-w2 div:hover,
+.card-w3 div:hover,
+.card-w4 div:hover,
+.card-w5 div:hover {
+  opacity: 60%;
+}
+.card-w div button,
+.card-w2 div button,
+.card-w3 div button,
+.card-w4 div button,
+.card-w5 div button {
+  margin-top: 3em;
+  margin-bottom: 1em;
+  width: 90%;
+  font-size: 1.3em;
+  cursor: pointer;
+  background: #ffcb74;
+  color: 07031a;
+  font-family: "Indie Flower", cursive;
+}
+
+section div img {
+  width: 300px;
+  height: 420px;
+  margin-top: 1em;
+  opacity: 80%;
+}
+
+.card-w2 {
+  grid-area: cardd-2;
+  text-align: center;
+}
+.card-w3 {
+  grid-area: cardd-3;
+  text-align: center;
+}
+.card-w4 {
+  grid-area: cardd-4;
+  text-align: center;
+}
+
+.card-w5 {
+  grid-area: cardd-5;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .container-w {
+    grid-template-areas:
+      "cardd-1 "
+      "cardd-2"
+      "cardd-3"
+      "cardd-4"
+      "cardd-5";
+  }
+}
+
+#header-w {
+  text-align: center;
+  transform: translateY(10vh);
+  font-size: 5em;
+  color: white;
+}
+
+/* .Bio {
+  color: white; 
   width: 15em;
   margin: 4em;
   font-family: 'Indie Flower', cursive;
@@ -145,7 +351,7 @@ header aside a:hover {
 
 
 .menu a:hover:nth-child(odd) {
-  /* background: #4f8a8b; */
+  background: #4f8a8b;
   border-left: 4px solid #ffcb74;
   transform: translateX(-0.5em);
   opacity: 80%;
@@ -153,7 +359,7 @@ header aside a:hover {
 
 .menu a:hover:nth-child(even) {
   padding: 0.2em;
-  /* background: #4f8a8b; */
+  /* background: #4f8a8b
   border-right: 4px solid #ffcb74;
   transform: translateX(0.5em);
   opacity: 80%;
@@ -271,22 +477,7 @@ header aside a:hover {
 
 .img-w img {
   transform: translateX(-10em);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} */
 
 /* * {
   margin: 0;
