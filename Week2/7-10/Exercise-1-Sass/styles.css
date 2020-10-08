@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cont {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0.6em;
+  text-align: center;
+  -ms-grid-columns: (1fr)[28];
+      grid-template-columns: repeat(28, 1fr);
+}
+
+.item {
+  padding: 1em;
+  background: yellow;
+}
+/*# sourceMappingURL=styles.css.map */

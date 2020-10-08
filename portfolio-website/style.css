@@ -96,10 +96,10 @@ header aside a:hover {
 }
 
 .textfooter {
-  color: white;
+  color: black;
   bottom: 0;
   position: fixed;
-  background: black;
+  background: #ffcb74;
   text-align: center;
   width: 100%;
 }
@@ -128,9 +128,16 @@ h3 {
     "logo logo logo"
     "content sidebar sidebar"
     "Address Address Address";
-  grid-gap: 0.25rem;
+  grid-gap: 4rem;
   font-size: 1.4em;
+  text-align: center;
+  justify-content: center;
 }
+
+.container p {
+  border-bottom: 1px white dotted;
+}
+
 .content {
   grid-area: content;
 }
@@ -179,11 +186,13 @@ h3 {
 .container-w {
   display: grid;
   /* grid-template-areas: "cardd-w"; */
-  grid-template-areas: "cardd-1 cardd-2 cardd-3 cardd-4 cardd-5";
+  grid-template-areas:
+    "cardd-1 cardd-2 cardd-3 cardd-4"
+    "cardd-5 cardd-5 cardd-5 cardd-5";
   grid-gap: 0.25rem;
   font-size: 1.4em;
-  grid-gap: 6em;
-
+  margin-left: 5em;
+  margin-right: 5em;
   margin-top: 1em;
 }
 
@@ -201,13 +210,21 @@ h3 {
   border-radius: 10px;
   margin: 5em 1em 5em 1em;
   z-index: -1;
+  transition: all 0.35s ease-in-out;
 }
-.card-w div:hover,
-.card-w2 div:hover,
-.card-w3 div:hover,
-.card-w4 div:hover,
-.card-w5 div:hover {
-  opacity: 60%;
+.card-w div:hover:nth-child(odd),
+.card-w2 div:hover:nth-child(even),
+.card-w3 div:hover:nth-child(odd),
+.card-w4 div:hover:nth-child(even),
+.card-w5 div:hover:nth-child(odd) {
+  transform: rotate(5deg) scale(1.06);
+}
+.card-w div:hover:nth-child(even),
+.card-w2 div:hover:nth-child(odd),
+.card-w3 div:hover:nth-child(even),
+.card-w4 div:hover:nth-child(odd),
+.card-w5 div:hover:nth-child(even) {
+  transform: rotate(-5deg) scale(1.06);
 }
 .card-w div button,
 .card-w2 div button,
@@ -227,8 +244,10 @@ h3 {
 section div img {
   width: 300px;
   height: 420px;
-  margin-top: 1em;
+  margin: 1rem 1rem;
   opacity: 80%;
+  border: 2px #ffcb74 solid;
+  border-radius: 20px;
 }
 
 .card-w2 {
@@ -249,14 +268,23 @@ section div img {
   text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .container-w {
     grid-template-areas:
-      "cardd-1 "
+      "cardd-1  "
       "cardd-2"
       "cardd-3"
       "cardd-4"
       "cardd-5";
+  }
+}
+
+@media (max-width: 1400px) {
+  .container-w {
+    grid-template-areas:
+      "cardd-1 cardd-2"
+      "cardd-3 cardd-4"
+      "cardd-5 cardd-5";
   }
 }
 
