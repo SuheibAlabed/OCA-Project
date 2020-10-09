@@ -1,3 +1,4 @@
+/* All pages */
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +10,8 @@ body {
   color: #ffcb74;
   font-family: "Indie Flower", cursive;
 }
-/* body #container {
-  justify-content: center;
-} */
 
+/* Header For All pages */
 header aside {
   display: flex;
   position: fixed;
@@ -48,6 +47,7 @@ header aside a:hover {
   }
 }
 
+/* Home Body */
 #container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -101,6 +101,7 @@ header aside a:hover {
   transform: scale(1.4) rotate(4deg);
 }
 
+/* Footer for All Pages */
 .textfooter {
   color: black;
   position: fixed;
@@ -110,6 +111,7 @@ header aside a:hover {
   bottom: 0;
 }
 
+/* Contact Page */
 #info-cont {
   font-family: "Indie Flower", cursive;
   font-size: 1.3em;
@@ -199,9 +201,19 @@ h3 {
   }
 }
 
+/* Work Page */
+
+/*
+I Know that isn't best practice
+I tried a lot of way but this way
+worked with me so I hope to give me feedback
+and how i can improve this code to be best practice and responsive  
+
+Best regards.
+
+*/
 .container-w {
   display: grid;
-  /* grid-template-areas: "cardd-w"; */
   grid-template-areas:
     "cardd-1 cardd-2 cardd-3 cardd-4"
     "cardd-5 cardd-5 cardd-5 cardd-5";
@@ -310,6 +322,8 @@ section div img {
   font-size: 5em;
   color: white;
 }
+
+/* this is part of my endeavors :) */
 
 /* .skillsbar {
   transform: translateY(10em);
