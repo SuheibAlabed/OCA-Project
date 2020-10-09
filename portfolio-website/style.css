@@ -9,12 +9,11 @@ body {
   color: #ffcb74;
   font-family: "Indie Flower", cursive;
 }
-body #container {
+/* body #container {
   justify-content: center;
-}
+} */
 
 header aside {
-  color: white;
   display: flex;
   position: fixed;
   flex: 1;
@@ -31,6 +30,7 @@ header aside {
 
 header aside a {
   text-decoration-line: none;
+  color: #07031a;
 }
 
 header aside a:hover {
@@ -63,6 +63,9 @@ header aside a:hover {
   font-family: "Galindo", cursive;
   /* border:2px solid white */
 }
+.logo:hover {
+  transform: scale(1.2) rotate(4deg);
+}
 .menu {
   text-align: center;
 }
@@ -94,14 +97,17 @@ header aside a:hover {
   font-family: "Indie Flower", cursive;
   font-size: 1.2em;
 }
+.Bio:hover {
+  transform: scale(1.4) rotate(4deg);
+}
 
 .textfooter {
   color: black;
-  bottom: 0;
   position: fixed;
   background: #ffcb74;
   text-align: center;
   width: 100%;
+  bottom: 0;
 }
 
 #info-cont {
@@ -141,13 +147,21 @@ h3 {
 .content {
   grid-area: content;
 }
-
+.content:hover {
+  transform: scale(1.2) rotate(4deg);
+}
 .sidebar {
   grid-area: sidebar;
+}
+.sidebar:hover {
+  transform: scale(1.2) rotate(4deg);
 }
 
 .Address {
   grid-area: Address;
+}
+.Address:hover {
+  transform: scale(1.2) rotate(4deg);
 }
 .logo-c {
   margin-top: 10vh;
@@ -157,7 +171,9 @@ h3 {
   font-size: 1.5em;
   color: white;
 }
-
+.logo-c:hover {
+  transform: scale(1.2) rotate(6deg);
+}
 .content,
 .sidebar,
 .Address {
@@ -191,8 +207,8 @@ h3 {
     "cardd-5 cardd-5 cardd-5 cardd-5";
   grid-gap: 0.25rem;
   font-size: 1.4em;
-  margin-left: 5em;
-  margin-right: 5em;
+  margin-left: 1em;
+  margin-right: 1em;
   margin-top: 1em;
 }
 
@@ -268,18 +284,18 @@ section div img {
   text-align: center;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container-w {
     grid-template-areas:
-      "cardd-1  "
-      "cardd-2"
-      "cardd-3"
-      "cardd-4"
-      "cardd-5";
+      "cardd-1 cardd-1"
+      "cardd-2 cardd-2"
+      "cardd-3 cardd-3"
+      "cardd-4 cardd-4"
+      "cardd-5 cardd-5";
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
   .container-w {
     grid-template-areas:
       "cardd-1 cardd-2"
@@ -294,6 +310,11 @@ section div img {
   font-size: 5em;
   color: white;
 }
+
+/* .skillsbar {
+  transform: translateY(10em);
+  
+} */
 
 /* .Bio {
   color: white; 
