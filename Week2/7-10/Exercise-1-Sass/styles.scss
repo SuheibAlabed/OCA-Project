@@ -1,73 +1,25 @@
-$box-color: yellow;
+$grid__cols: 12;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.container {
+  .row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 3em;
+    color: white;
+    text-shadow: black 3px 2px 5px;
+  }
+
+  @for $i from 1 through $grid__cols {
+    .col-#{$i} {
+      flex-basis: (100 / ($grid__cols / $i)) * 1%;
+      background-color: yellow;
+      margin: 10px 1px;
+      padding: 0.5em;
+      align-items: center;
+    }
+  }
 }
 
-.cont {
-  display: grid;
-  grid-gap: 0.6em;
-  text-align: center;
-  grid-template-columns: repeat(28, 1fr)
-}
-
-.item {
-  padding: 1em;
-  background: $box-color;
-}
-
-// .item {
-//   padding: 1em;
-//   background: $box-color;
-
-// }
-
-// .item:nth-child(1) {
-
-//   grid-column: span 28;
-// }
-
-// .item:nth-child(2) {
-//   grid-column: span 14;
-
-// }
-
-// .item:nth-child(3) {
-//   grid-column: span 14;
-
-// }
-
-// .item:nth-child(4) {
-//   grid-column: span 9;
-
-// }
-
-// .item:nth-child(5) {
-//   grid-column: span 10;
-// }
-
-// .item:nth-child(6) {
-//   grid-column: span 9;
-// }
-
-// .item:nth-child(7) {
-//   grid-column: span 9;
-// }
-
-
-
-
-
-// @for $i from 1 to 13 {
-//   .item {
-//     grid-column: $i/12;
-//   }}
-
-// @for $i from 1 through 10 {
-
-//   .cont:nth-child($i) {
-//     grid-template-columns: repeat(5, 1fr);
-//   }
-// }
+//Styling of grid for demostration purposes
