@@ -36,6 +36,7 @@ body {
   background: #333;
   border-radius: 200px;
   overflow: hidden;
+  border: brown 1px solid;
   margin: 1rem 1rem;
 }
 
@@ -68,8 +69,8 @@ body {
           flex-direction: row;
   margin: 1rem 2rem 0 2rem;
   border-radius: 10px;
-  -webkit-box-shadow: gray 2px 3px 25px;
-          box-shadow: gray 2px 3px 25px;
+  -webkit-box-shadow: gray 2px 3px 20px;
+          box-shadow: gray 2px 3px 20px;
 }
 
 .container .item-2 .Bio-1 {
@@ -117,8 +118,8 @@ body {
           flex-direction: row;
   margin: 1rem 2rem 0 2rem;
   border-radius: 10px;
-  -webkit-box-shadow: gray 2px 3px 25px;
-          box-shadow: gray 2px 3px 25px;
+  -webkit-box-shadow: gray 2px 3px 20px;
+          box-shadow: gray 2px 3px 20px;
   overflow-x: auto;
 }
 
@@ -150,6 +151,27 @@ body {
   }
 }
 
+.container .item-4 {
+  background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1rem 2rem 0 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: gray 2px 3px 20px;
+          box-shadow: gray 2px 3px 20px;
+  overflow-x: auto;
+  height: 20vh;
+  font-size: 5vmax;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .work1-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,9 +195,9 @@ body {
   visibility: hidden;
   margin-top: -250px;
   background: rgba(0, 0, 0, 0.8);
-  transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -webkit-transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 
 .work1:target {
@@ -187,7 +209,7 @@ body {
 .ft-modal-content {
   width: 70%;
   padding: 25px;
-  background: #FFF;
+  background: #fff;
   max-width: 600px;
   margin: 70px auto;
   position: relative;
