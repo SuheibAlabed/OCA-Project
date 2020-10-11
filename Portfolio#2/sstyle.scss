@@ -1,0 +1,176 @@
+$bg-color:#e2e2e2;
+$section-color: #f3f3f3;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-color;
+  width: 100%;
+
+
+}
+
+.container {
+
+  // Contain profile picture and my name.
+  .item-1 {
+    background-color: $section-color;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 2rem 0 2rem;
+    border-radius: 10px;
+    box-shadow: gray 2px 3px 25px;
+    height: 20vh;
+    align-items: center;
+    overflow: hidden;
+
+
+    .circleProfilePicture {
+      height: 100px;
+      width: 100px;
+      background: #333;
+      border-radius: 200px;
+      overflow: hidden;
+
+      margin: 1rem 1rem;
+
+      #profilepicture {
+        max-width: 150px;
+        max-height: 150px;
+        flex-basis: 140px;
+      }
+
+      @media screen and (max-width:400px) {
+        max-width: 70px;
+        max-height: 70px;
+
+        #profilepicture {
+          transform: translateX(-10px);
+        }
+
+      }
+    }
+
+  }
+
+
+  // contain information about me like (about, contact, work)
+  .item-2 {
+    background-color: $section-color;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 2rem 0 2rem;
+    border-radius: 10px;
+    box-shadow: gray 2px 3px 25px;
+
+
+
+    .Bio-1 {
+      margin: 2vh 0vh 2vh 2vh;
+      border-right: black 1px solid;
+      padding-right: 1rem;
+    }
+
+    @media screen and (max-width:795px) {
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      overflow: auto;
+      height: 70vmax;
+
+      .Bio-1 {
+        text-align: center;
+        border: none;
+        margin: 2vh 0vh 4vh 2vh;
+        border-bottom: black 1px solid
+      }
+    }
+
+    @media screen and (max-height:520px) {
+      overflow: auto;
+      height: 10vmax;
+    }
+  }
+
+  .item-3 {
+    background-color: $section-color;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 2rem 0 2rem;
+    border-radius: 10px;
+    box-shadow: gray 2px 3px 25px;
+    overflow-x: auto;
+
+
+    h3 {
+      margin: 2vh 0vh 4vh 2vh;
+    }
+
+    .workstory {
+      height: 100px;
+      width: 100px;
+      background: #333;
+      border-radius: 200px;
+      overflow: hidden;
+      margin: 1rem 1rem;
+      border: double 5px orange;
+
+      #workpicture {
+        max-width: 150px;
+        max-height: 150px;
+        flex-basis: 140px;
+      }
+
+      @media screen and (max-width:400px) {
+        max-width: 70px;
+        max-height: 70px;
+
+      }
+    }
+  }
+}
+
+.work1-1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.work1 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 9999;
+  overflow: auto;
+  position: fixed;
+  visibility: hidden;
+  margin-top: -250px;
+  background: rgba(0, 0, 0, .8);
+
+  transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+
+.work1:target {
+  opacity: 1;
+  margin-top: 0px;
+  visibility: visible;
+}
+
+.ft-modal-content {
+  width: 70%;
+  padding: 25px;
+  background: #FFF;
+  max-width: 600px;
+  margin: 70px auto;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}

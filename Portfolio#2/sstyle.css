@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #e2e2e2;
+  width: 100%;
+}
+
+.container .item-1 {
+  background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5rem 2rem 0 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: gray 2px 3px 25px;
+          box-shadow: gray 2px 3px 25px;
+  height: 20vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.container .item-1 .circleProfilePicture {
+  height: 100px;
+  width: 100px;
+  background: #333;
+  border-radius: 200px;
+  overflow: hidden;
+  margin: 1rem 1rem;
+}
+
+.container .item-1 .circleProfilePicture #profilepicture {
+  max-width: 150px;
+  max-height: 150px;
+  -ms-flex-preferred-size: 140px;
+      flex-basis: 140px;
+}
+
+@media screen and (max-width: 400px) {
+  .container .item-1 .circleProfilePicture {
+    max-width: 70px;
+    max-height: 70px;
+  }
+  .container .item-1 .circleProfilePicture #profilepicture {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+}
+
+.container .item-2 {
+  background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1rem 2rem 0 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: gray 2px 3px 25px;
+          box-shadow: gray 2px 3px 25px;
+}
+
+.container .item-2 .Bio-1 {
+  margin: 2vh 0vh 2vh 2vh;
+  border-right: black 1px solid;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 795px) {
+  .container .item-2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: auto;
+    height: 70vmax;
+  }
+  .container .item-2 .Bio-1 {
+    text-align: center;
+    border: none;
+    margin: 2vh 0vh 4vh 2vh;
+    border-bottom: black 1px solid;
+  }
+}
+
+@media screen and (max-height: 520px) {
+  .container .item-2 {
+    overflow: auto;
+    height: 10vmax;
+  }
+}
+
+.container .item-3 {
+  background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1rem 2rem 0 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: gray 2px 3px 25px;
+          box-shadow: gray 2px 3px 25px;
+  overflow-x: auto;
+}
+
+.container .item-3 h3 {
+  margin: 2vh 0vh 4vh 2vh;
+}
+
+.container .item-3 .workstory {
+  height: 100px;
+  width: 100px;
+  background: #333;
+  border-radius: 200px;
+  overflow: hidden;
+  margin: 1rem 1rem;
+  border: double 5px orange;
+}
+
+.container .item-3 .workstory #workpicture {
+  max-width: 150px;
+  max-height: 150px;
+  -ms-flex-preferred-size: 140px;
+      flex-basis: 140px;
+}
+
+@media screen and (max-width: 400px) {
+  .container .item-3 .workstory {
+    max-width: 70px;
+    max-height: 70px;
+  }
+}
+
+.work1-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.work1 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 9999;
+  overflow: auto;
+  position: fixed;
+  visibility: hidden;
+  margin-top: -250px;
+  background: rgba(0, 0, 0, 0.8);
+  transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+
+.work1:target {
+  opacity: 1;
+  margin-top: 0px;
+  visibility: visible;
+}
+
+.ft-modal-content {
+  width: 70%;
+  padding: 25px;
+  background: #FFF;
+  max-width: 600px;
+  margin: 70px auto;
+  position: relative;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=sstyle.css.map */
