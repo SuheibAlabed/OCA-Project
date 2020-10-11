@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(Resourese/Background-2.gif);
+  background-size: cover;
+  overflow-x: hidden;
+  color: #fad61d;
+  font-family: "VT323", monospace;
+  font-size: 3vmax;
+  margin: 0 10vh 0 10vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+
+header {
+  animation: pikachu 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes pikachu {
+  from {
+    transform: scale(1.5) rotateZ(4deg);
+  }
+}
+
+article section {
+  overflow: scroll;
+  height: 40vh;
+  overflow-x: hidden;
+}
+
+article section a {
+  color: white;
+}
+.nav-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  background-color: #911e09;
+  padding: 0.5rem;
+}
+.nav-1 a {
+  color: #fad61d;
+  text-decoration: none;
+}
+.nav-1 a:hover {
+  color: white;
+}

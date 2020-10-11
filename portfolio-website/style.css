@@ -51,7 +51,6 @@ header aside a:hover {
 #container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  box-sizing: border-box;
   margin: 25vh 0 0 25vh;
   position: absolute;
   /* border: 2px solid white; */
@@ -91,7 +90,7 @@ header aside a:hover {
   opacity: 80%;
 }
 .Bio {
-  color: ffcb74;
+  color: #ffcb74;
   width: 15em;
   margin: 4em;
   font-family: "Indie Flower", cursive;
