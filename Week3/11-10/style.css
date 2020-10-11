@@ -45,6 +45,8 @@ article section a {
   margin-bottom: 5rem;
   background-color: #911e09;
   padding: 0.5rem;
+  position: sticky;
+  top: 0;
 }
 .nav-1 a {
   color: #fad61d;
