@@ -31,7 +31,7 @@
 //#endregion
 
 
- /******* End Your Code ********* */
+ /******* End Your Code ***********/
 
 /* 2. Write a JavaScript conditional statement to find the sign
  of product of three numbers. Display an alert box with the 
