@@ -1,5 +1,8 @@
 $bg-color: #e2e2e2;
 $section-color: #f3f3f3;
+$frame-color: orange;
+$shadow-color: gray 1px 2px 10px;
+$text-color: black;
 
 * {
   margin: 0;
@@ -12,10 +15,7 @@ body {
   width: 100%;
 }
 
-
-
 .container {
-
   // Contain profile picture and my name.
   .item-1 {
     background-color: $section-color;
@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     margin: 5rem 2rem 0 2rem;
     border-radius: 10px;
-    box-shadow: gray 2px 3px 25px;
+    box-shadow: $shadow-color;
     height: 20vh;
     align-items: center;
     overflow: hidden;
@@ -34,14 +34,13 @@ body {
       background: #333;
       border-radius: 200px;
       overflow: hidden;
-      border: brown 1px solid;
+      border: #333 1px solid;
       margin: 1rem 1rem;
 
       #profilepicture {
         max-width: 150px;
         max-height: 150px;
         flex-basis: 140px;
-
       }
 
       @media screen and (max-width: 400px) {
@@ -49,7 +48,10 @@ body {
         max-height: 70px;
 
         #profilepicture {
-          transform: translateX(-10px);
+          max-width: 120px;
+          max-height: 120px;
+          flex-basis: 120px;
+          transform: translateX(-5px);
         }
       }
     }
@@ -62,7 +64,7 @@ body {
     flex-direction: row;
     margin: 1rem 2rem 0 2rem;
     border-radius: 10px;
-    box-shadow: gray 2px 3px 20px;
+    box-shadow: $shadow-color;
 
     .Bio-1 {
       margin: 2vh 0vh 2vh 2vh;
@@ -80,7 +82,8 @@ body {
       .Bio-1 {
         text-align: center;
         border: none;
-        margin: 2vh 0vh 4vh 2vh;
+        margin: 2vh 2vh 4vh 2vh;
+        padding-bottom: 2rem;
         border-bottom: black 1px solid;
       }
     }
@@ -97,13 +100,23 @@ body {
     flex-direction: row;
     margin: 1rem 2rem 0 2rem;
     border-radius: 10px;
-    box-shadow: gray 2px 3px 20px;
+    box-shadow: $shadow-color;
     overflow-x: auto;
 
     h3 {
       margin: 2vh 0vh 4vh 2vh;
     }
+    .work1-body {
+      overflow: auto;
+      border: 2px black solid;
+    }
 
+    @media screen and (max-width: 420px) {
+      .work1-body img {
+        width: 200px;
+        height: 270px;
+      }
+    }
     .workstory {
       height: 100px;
       width: 100px;
@@ -111,7 +124,7 @@ body {
       border-radius: 200px;
       overflow: hidden;
       margin: 1rem 1rem;
-      border: double 5px orange;
+      border: double 5px $frame-color;
 
       #workpicture {
         max-width: 150px;
@@ -126,21 +139,42 @@ body {
     }
   }
 
-
   .item-4 {
     background-color: $section-color;
     display: flex;
     flex-direction: row;
     margin: 1rem 2rem 0 2rem;
     border-radius: 10px;
-    box-shadow: gray 2px 3px 20px;
+    box-shadow: $shadow-color;
     overflow-x: auto;
     height: 20vh;
     font-size: 5vmax;
     justify-content: center;
+    text-align: center;
+
+    #text {
+      margin-top: 2rem;
+    }
+  }
+
+  .item-5 {
+    background-color: $section-color;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 2rem 0 2rem;
+    border-radius: 10px;
+    box-shadow: $shadow-color;
+    overflow-x: auto;
+    height: 20vh;
+    font-size: 5vmax;
+    justify-content: center;
+    text-align: center;
+
+    #text {
+      margin-top: 2rem;
+    }
   }
 }
-
 
 .work1-1 {
   display: flex;

@@ -21,8 +21,8 @@ body {
           flex-direction: column;
   margin: 5rem 2rem 0 2rem;
   border-radius: 10px;
-  -webkit-box-shadow: gray 2px 3px 25px;
-          box-shadow: gray 2px 3px 25px;
+  -webkit-box-shadow: gray 1px 2px 10px;
+          box-shadow: gray 1px 2px 10px;
   height: 20vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -36,7 +36,7 @@ body {
   background: #333;
   border-radius: 200px;
   overflow: hidden;
-  border: brown 1px solid;
+  border: #333 1px solid;
   margin: 1rem 1rem;
 }
 
@@ -53,8 +53,12 @@ body {
     max-height: 70px;
   }
   .container .item-1 .circleProfilePicture #profilepicture {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    max-width: 120px;
+    max-height: 120px;
+    -ms-flex-preferred-size: 120px;
+        flex-basis: 120px;
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
   }
 }
 
@@ -69,8 +73,8 @@ body {
           flex-direction: row;
   margin: 1rem 2rem 0 2rem;
   border-radius: 10px;
-  -webkit-box-shadow: gray 2px 3px 20px;
-          box-shadow: gray 2px 3px 20px;
+  -webkit-box-shadow: gray 1px 2px 10px;
+          box-shadow: gray 1px 2px 10px;
 }
 
 .container .item-2 .Bio-1 {
@@ -95,7 +99,8 @@ body {
   .container .item-2 .Bio-1 {
     text-align: center;
     border: none;
-    margin: 2vh 0vh 4vh 2vh;
+    margin: 2vh 2vh 4vh 2vh;
+    padding-bottom: 2rem;
     border-bottom: black 1px solid;
   }
 }
@@ -118,13 +123,25 @@ body {
           flex-direction: row;
   margin: 1rem 2rem 0 2rem;
   border-radius: 10px;
-  -webkit-box-shadow: gray 2px 3px 20px;
-          box-shadow: gray 2px 3px 20px;
+  -webkit-box-shadow: gray 1px 2px 10px;
+          box-shadow: gray 1px 2px 10px;
   overflow-x: auto;
 }
 
 .container .item-3 h3 {
   margin: 2vh 0vh 4vh 2vh;
+}
+
+.container .item-3 .work1-body {
+  overflow: auto;
+  border: 2px black solid;
+}
+
+@media screen and (max-width: 420px) {
+  .container .item-3 .work1-body img {
+    width: 200px;
+    height: 270px;
+  }
 }
 
 .container .item-3 .workstory {
@@ -162,14 +179,45 @@ body {
           flex-direction: row;
   margin: 1rem 2rem 0 2rem;
   border-radius: 10px;
-  -webkit-box-shadow: gray 2px 3px 20px;
-          box-shadow: gray 2px 3px 20px;
+  -webkit-box-shadow: gray 1px 2px 10px;
+          box-shadow: gray 1px 2px 10px;
   overflow-x: auto;
   height: 20vh;
   font-size: 5vmax;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+}
+
+.container .item-4 #text {
+  margin-top: 2rem;
+}
+
+.container .item-5 {
+  background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1rem 2rem 0 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: gray 1px 2px 10px;
+          box-shadow: gray 1px 2px 10px;
+  overflow-x: auto;
+  height: 20vh;
+  font-size: 5vmax;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.container .item-5 #text {
+  margin-top: 2rem;
 }
 
 .work1-1 {
