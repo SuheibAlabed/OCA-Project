@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //#region solution 1
+      // function tellFortune(Job_T, Address, Name_Partner, Num_children) {
+      //   document.write(
+      //     "You will be a " +
+      //       Job_T +
+      //       " in " +
+      //       Address +
+      //       ", and married to " +
+      //       Name_Partner +
+      //       " with " +
+      //       Num_children +
+      //       " kids."
+      //   );
+      // }
+
+      // tellFortune("software engineer", "jordan", "Alice", 3);
+
+      //#endregion
+
+      //#region solution 2
+      function tellFortune(Job_T, Address, Name_Partner, Num_children) {
+        document.write(
+          "You will be a " +
+            Job_T +
+            " in " +
+            Address +
+            ", and married to " +
+            Name_Partner +
+            " with " +
+            Num_children +
+            " kids."
+        );
+      }
+
+      var _T_job = prompt("Title Job");
+      var _name_partner = prompt("Enter Name of Partner Please!");
+      var _num_child = prompt("Hom many kids you have ");
+      var _address = prompt("Enter you location");
+
+      tellFortune(_T_job, _address, _name_partner, _num_child);
+      //#endregion
+    </script>
+  </body>
+</html>
