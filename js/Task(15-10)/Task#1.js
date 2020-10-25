@@ -60,7 +60,7 @@
       read(nums1, 1);
       read(nums2, 2);
 
- //#region Using For Loop
+//#region Using For Loop
       function read(temp, order) {
         for (let i = 0; i < temp.length; i++) {
           temp[i] = prompt("Enter Number: " + (i + 1));
@@ -78,10 +78,10 @@
         Avg = sum / nums.length;
         document.write("<h1>The Avg Array #" + order + ":" + Avg + "</h1>");
       }
-  //#endregion
+//#endregion
 
 
-  //#region Using While loop
+//#region Using While loop
 
       function read(temp, order) {
         let i = 0;
@@ -107,7 +107,7 @@
         document.write("<h1>The Avg Array #" + order + ":" + Avg + "</h1>");
       }
 
-  //#endregion
+//#endregion
 
 //#endregion
 

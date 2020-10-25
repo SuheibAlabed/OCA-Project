@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <title>Document</title>
+    <title>Session&Local Storage</title>
+   
 
     <style>
       * {
@@ -21,6 +22,7 @@
         text-align: center;
         width: 30rem;
         border-radius: 15px;
+        margin: 4rem auto;
       }
 
       .container h4 {
@@ -75,7 +77,7 @@
       <form action="#">
         <div class="input">
           <i class="icon"><img src="user.png" alt="" width="20px" /></i>
-          <input class="input-field" type="text" placeholder="Name" />
+          <input class="input-field" type="text" Name="Name_1" value="" id="Name_010" placeholder="Name" />
         </div>
         <div class="input">
           <i class="icon"><img src="call.png" alt="" width="20px" /></i>
@@ -101,7 +103,7 @@
         </div>
         <div class="input">
           <i class="icon"><img src="padlock.png" alt="" width="20px" /></i>
-          <input class="input-field" type="password" placeholder="Password" />
+          <input class="input-field" type="password" Name="Password" value="" id="Password_1" placeholder="Password" />
         </div>
         <div id="input-radio">
           <label for=""
@@ -115,37 +117,14 @@
           <p id="Error_2"></p>
         </div>
 
-        <div class="input">
-          <i class="icon"> </i>
-          <input type="button" value="Create Account" id="Btn_1" ></input>
+        <div class="input">         
+          <input type="button" onmousedown="sesstionStorge_1()" onclick="LocalStorage_1()" value="Create Account" id="Btn_1" ></input>
+          <input type="button" onmousedown="RemoveLocalStorage()"  value="Clear Local" id="Btn_1" ></input>
+          <input type="button"  onclick="RemoveSessionStorage()" value="Clear Session" id="Btn_1" ></input>
         </div>
       </form>
     </div>
     <h1 id="phone_number"></h1>
-    <script>
-
-      $("#Btn_1").click(function()
-      {
-        var phoneNumber = document.getElementById("phoneNumber_2").value;
-        var email = document.getElementById("Email_2").value;
-        if (
-          !phoneNumber.match(/^\(?([0-9]{3})\)?[-]?([0-9]{3})[-]?([0-9]{4})$/)
-        ) {
-          document.getElementById("Error_1").innerHTML =
-            "Enter VALID number. Ex: 000-000-0000";
-        }
-          
-
-        if (
-          !email.match(
-            /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-          )
-        ) {
-          document.getElementById("Error_2").innerHTML =
-            "Enter VALID Email. Ex: name@email.com";
-        }
-      });
-      
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

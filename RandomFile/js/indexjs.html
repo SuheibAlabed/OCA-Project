@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        grid-gap: 2rem;
+        margin: 5rem 2rem 3rem 2rem;
+      }
+      #date_1 {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        /* grid-column: 1 / span 3; */
+        font-weight: bold;
+      }
+      #Data_1 {
+        grid-row-end: 1;
+        grid-column: 1 / span 3;
+        font-weight: bold;
+      }
+      .pargh2 {
+        grid-column: 1 / span 3;
+        border-top: 2px dotted black;
+        padding-top: 1.5rem;
+      }
+
+      #header1 {
+        background-color: teal;
+        top: 0;
+        display: flex;
+        justify-content: space-around;
+        position: sticky;
+        width: 100%;
+      }
+      #header1 a {
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+      }
+      #header1 a:hover {
+        background-color: white;
+        color: teal;
+      }
+
+      #sideItem {
+        display: flex;
+        flex-direction: column;
+        background: blanchedalmond;
+        left: 100%;
+        position: absolute;
+        padding: 2rem;
+        text-decoration: none;
+        height: 100%;
+      }
+      #sideItem a {
+        padding: 2rem;
+        text-decoration: none;
+        border-bottom: 1px black solid;
+      }
+      #sideItem a:hover {
+        background-color: brown;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header1">
+      <a href="#">Home</a>
+      <a href="#">Contact</a>
+      <a href="#">about</a>
+      <a href="#" id="sidebar1">MORE</a>
+    </header>
+    <aside id="sideItem">
+      <a href="#">item-1</a>
+      <a>item-2</a>
+      <a>item-3</a>
+      <a>item-4</a>
+      <a>item-5</a>
+    </aside>
+    <div class="container">
+      <div id="date_1">
+        <p id="demo1">welcome</p>
+        <p id="todayDate_1">1/1/2020</p>
+      </div>
+      <div id="Data_1">
+        <p id="Full_Name">Name:</p>
+        <p id="Email_H">Email:</p>
+      </div>
+      <article class="pargh1">
+        <h4>item-1</h4>
+        <p class="pargh_1">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic,
+          distinctio animi? Possimus ipsum accusantium numquam quis maxime, unde
+          totam blanditiis id architecto neque! Minima natus at culpa soluta
+          praesentium molestias?
+        </p>
+        <button id="ReadMore_1">read more</button>
+      </article>
+      <article class="pargh1">
+        <h4>item-2</h4>
+        <p class="pargh_2">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quam
+          rem animi porro id nesciunt ad et deserunt dolorem optio quas, vero
+          accusantium fuga saepe harum sequi consequatur quae. Reprehenderit?
+        </p>
+        <button id="ReadMore_2">read more</button>
+      </article>
+      <article class="pargh1">
+        <h4>item-3</h4>
+        <p class="pargh_3">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quam
+          rem animi porro id nesciunt ad et deserunt dolorem optio quas, vero
+          accusantium fuga saepe harum sequi consequatur quae. Reprehenderit?
+        </p>
+        <button id="ReadMore_3">read more</button>
+      </article>
+      <section class="pargh2">
+        <form method="POST" action="#">
+          <label
+            >First Name <br /><input
+              type="text"
+              name="fname"
+              id="Fname_1"
+              value=""
+              placeholder="Please, Enter first Name here....." /></label
+          ><br />
+          <label
+            >Last Name<br /><input
+              type="text"
+              name="Lname"
+              id="Lname_1"
+              value=""
+              placeholder="Please, Enter Last Name here....." /></label
+          ><br />
+          <label
+            >Email<br /><input
+              type="email"
+              name="Lname"
+              id="Email_1"
+              value=""
+              placeholder="Please, Enter your here....." /></label
+          ><br /><br />
+
+          <br />
+          <label id="">
+            <select name="" id="category">
+              <option value="0">item_1</option>
+              <option value="1">item_1</option>
+              <option value="2">item_1</option>
+              <option value="3">item_1</option>
+            </select>
+
+            <input
+              type="number"
+              name="Lname"
+              id="Email_1"
+              value=""
+              placeholder="Please, Enter your here....."
+            />
+          </label>
+
+          <br /><br />
+
+          <input type="button" value="Ok" onclick="Data()" />
+        </form>
+      </section>
+    </div>
+    <script>
+      const date = new Date();
+      var hours = date.getHours();
+      var minute = date.getMinutes();
+      var Date_1 = document.getElementById("todayDate_1");
+      Date_1.innerHTML = countdate() + ":" + minute;
+
+      function countdate() {
+        if (hours >= 13) {
+          hours -= 12;
+          return hours;
+        }
+      }
+      btnReadMore("#ReadMore_1", ".pargh_1");
+      btnReadMore("#ReadMore_2", ".pargh_2");
+      btnReadMore("#ReadMore_3", ".pargh_3");
+      btnReadMore("#sidebar1", "#select");
+      window.addEventListener("resize", function () {
+        alert("Please Don't resize the window again.");
+      });
+
+      // document.addEventListener("click", Data());
+
+      function Data() {
+        var F_Name = document.getElementById("Fname_1").value;
+
+        var L_Name = document.getElementById("Lname_1").value;
+        var Email = document.getElementById("Email_1").value;
+        document.getElementById("Full_Name").innerHTML =
+          "Name: " + F_Name + " " + L_Name;
+        document.getElementById("Email_H").innerHTML = "Eamil: " + Email;
+      }
+      function btnReadMore(btn_1, parah) {
+        $(document).ready(function () {
+          $(btn_1).click(function () {
+            $(parah).slideToggle("fast");
+          });
+        });
+      }
+
+      $("#sidebar1").mouseover(function () {
+        $("#sideItem").animate({
+          left: "81%",
+          width: "500px",
+        });
+      });
+      $("#sidebar1").click(function () {
+        $("#sideItem").animate({
+          left: "100%",
+        });
+      });
+    </script>
+  </body>
+</html>
