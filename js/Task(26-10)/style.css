@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin: 10rem 20rem 0 20rem;
+  height: 50vh;
+}
+
+.shape_1 {
+  background: rgb(98, 48, 109);
+  justify-content: center;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  opacity: 1;
+  transition: opacity 1s;
+  border-top-left-radius: 20px;
+}
+
+.item_1 {
+  width: 100px;
+  height: 100px;
+  background: rgb(249, 237, 127);
+}
+.item_1:not(:nth-child(2)) {
+  margin-top: 6.2rem;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.item_1:nth-child(2) {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.shape_2 {
+  justify-content: center;
+  padding-top: 6rem;
+  background: rgb(101, 145, 206);
+  transition: opacity 1s;
+  border-top-right-radius: 20px;
+}
+.item_rect {
+  width: 300px;
+  height: 150px;
+  background: rgb(36, 60, 130);
+  margin: 0 auto;
+  text-align: center;
+}
+.item_circle_1 {
+  width: 150px;
+  height: 150px;
+  background: rgb(237, 184, 80);
+  border-radius: 200px;
+  border: 50px solid rgb(36, 60, 130);
+}
+.item_circle_2 {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 200px;
+  margin-left: 2.5rem;
+  margin-top: 14rem;
+  padding: 2.1rem;
+  top: 0;
+  background: rgb(101, 145, 206);
+}
+
+button {
+  padding: 10px;
+}
