@@ -12,7 +12,7 @@
   height: 50vh;
 }
 
-.shape_1 {
+#shape_1 {
   background: rgb(98, 48, 109);
   justify-content: center;
   padding-top: 6rem;
@@ -39,7 +39,7 @@
   border-top-left-radius: 50px;
 }
 
-.shape_2 {
+#shape_2 {
   justify-content: center;
   padding-top: 6rem;
   background: rgb(101, 145, 206);

@@ -9,21 +9,21 @@
 
   <body>
     <div class="container">
-      <section class="shape_1">
+      <section id="shape_1">
         <div class="item_1"></div>
         <div class="item_1"></div>
         <div class="item_1"></div>
       </section>
 
-      <section class="shape_2">
+      <section id="shape_2">
         <div class="item_rect">
           <div class="item_circle_2">
             <div class="item_circle_1"></div>
           </div>
         </div>
       </section>
-      <button onclick="hideShape_1()" id="hiddenBtn">Click</button>
-      <button id="shape_2" onclick="hideShape_2()">Click</button>
+      <button onclick=hide("shape_1") id="hiddenBtn">Click</button>
+      <button  onclick=hide("shape_2")>Click</button>
     </div>
 
     <script src="main.js"></script>

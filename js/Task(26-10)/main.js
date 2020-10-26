@@ -1,23 +1,13 @@
-function hideShape_1() {
-  var shape1 = document.querySelector(".shape_1");
-  //var hiddenBtn = document.getElementById("hiddenBtn");
-  // var showBtn = document.getElementById("showBtn");
-  if (shape1.style.visibility != "hidden") {
-    shape1.style.opacity = "0";
-    shape1.style.visibility = "hidden";
-    // fadeInEntrance(shape_1, 15);
+function hide(shape) {
+  var shape1 = document.getElementById(shape);
+  opacity = Number(window.getComputedStyle(shape1).getPropertyValue("opacity"));
+  if (opacity > 0) {
+    opacity = opacity - 1;
+    shape1.style.opacity = opacity;
+    console.log(opacity);
   } else {
-    shape1.style.visibility = "visible";
-    shape1.style.opacity = "1";
-  }
-}
-function hideShape_2() {
-  var shape2 = document.querySelector(".shape_2");
-  if (shape2.style.visibility != "hidden") {
-    shape2.style.opacity = "0";
-    shape2.style.visibility = "hidden";
-  } else {
-    shape2.style.visibility = "visible";
-    shape2.style.opacity = "1";
+    opacity = opacity + 1;
+    shape1.style.opacity = opacity;
+    console.log(opacity);
   }
 }
