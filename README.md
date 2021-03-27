@@ -1,7 +1,7 @@
 # OCA-Project
 
 <br/>
-<div style="display:flex,flex-direction:row">
+<div style="display:flex,flex-direction:column">
   <a href="#">
     <img align="left" alt="Prashant Gaikwad | Twitter"  width="400px" src="https://res.cloudinary.com/dr5is8jar/image/upload/v1616862188/Screenshot_20210327-191926_Expo_Go_mqqe9a.jpg" />
   </a>
